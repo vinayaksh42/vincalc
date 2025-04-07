@@ -28,18 +28,18 @@ public class Calculator {
 
     // Multiply method
     public int multiply(int input) {
-        // if (this.multiplyWith == 0) {
-        // throw new IllegalArgumentException("multiplyWith value cannot be 0");
-        // }
+        if (this.multiplyWith == 0) {
+            throw new IllegalArgumentException("multiplyWith value cannot be 0");
+        }
         return input * this.multiplyWith;
     }
 
     // non user value throws exception
     public void setMultiplyWithNonUserValue(int value) {
         int nonUserValue = 0;
-        // if (nonUserValue == 0) {
-        // throw new IllegalArgumentException("multiplyWith value cannot be 0");
-        // }
+        if (nonUserValue == 0) {
+            throw new IllegalArgumentException("multiplyWith value cannot be 0");
+        }
         this.multiplyWith = value;
     }
 
